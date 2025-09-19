@@ -1,10 +1,10 @@
-import React, { use, useState } from 'react';
+import React, { useState } from 'react';
 import './country.css'
 
-const country = ({country, handleVisitedCountries}) => {
+const Country = ({country, handleVisitedCountries}) => {
     // console.log(handleVisitedCountries)
 
-    const [visited, setVisited] = useState(false);
+    const [visited, setVisited] = useState(false)
 
     const handleVisited = () => {
         // setVisited(visited ? false : true)
@@ -28,4 +28,4 @@ const country = ({country, handleVisitedCountries}) => {
     );
 };
 
-export default country;
+export default Country;

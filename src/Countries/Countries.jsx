@@ -5,6 +5,7 @@ import './countries.css'
 
 const Countries = ({countriesPromise}) => {
     const [visitedCountries, setVisitedCountries] = useState([])
+    
     const handleVisitedCountries = (country) => {
         const newVisitedCountries = [...visitedCountries, country];
         setVisitedCountries(newVisitedCountries)
